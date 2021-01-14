@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    tools:context=".postActivity">
+
+    <include
+        android:id="@+id/updatePostPageToolbar"
+        layout="@layout/app_bar_layout"
+        />
+
+    <ImageButton
+        android:id="@+id/selectPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="150dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/empty" />
+
+    <EditText
+        android:id="@+id/postDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/input"
+        android:padding="12dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Write something about your image!"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/updatePostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:layout_marginBottom="85dp"
+        android:text="Update Post" />
+
+</RelativeLayout>

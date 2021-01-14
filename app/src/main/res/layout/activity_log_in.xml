@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    tools:context=".logInActivity">
+
+
+    <ImageView
+        android:id="@+id/logInIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="134dp"
+        app:srcCompat="@drawable/facebook" />
+
+    <EditText
+        android:id="@+id/logInEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logInIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/logInPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logInEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/input"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/logInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logInPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button"
+        android:onClick="logIn"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/registerAccountLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logInButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Don't have an account? Register Here!"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerAccountLink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Instead you can login with:"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/facebookclone"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/empty" />
+
+        <ImageView
+            android:id="@+id/googleclone"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/empty" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
